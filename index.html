@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>FP sellection</title>
-</head>
-<body>
- <header>
-    <img src="./img/logofp-removebg-preview.png" alt="Logo fp">
-    <nav>
+  </head>
+  <body>
+    <header>
+      <nav>
         <ul>
-            <li>Home</li>
-            <li>Maconha</li>
-            <li>Fale Conosco</li>
+          <li>Home</li>
+          <li>Maconha</li>
+          <li>Fale Conosco</li>
         </ul>
-    </nav>
- </header>
+      </nav>
+    </header>
 
-    <section>
-        <div class="list">
-            <div class="item">
-                <div class="weed-img">
-                    <img src="./img/indica-removebg-preview.png" alt="Indica">
-                </div>
-                <div class="content">
-                    <p class="weed-information">
-                        Maconha
-                    </p>
-                    <h2>
-                        Indica
-                    </h2>
-                    <p class="description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus nam reprehenderit odio, numquam blanditiis officia explicabo architecto quia aliquam, tempore obcaecati recusandae
-                         consectetur non fugit labore eaque perferendis vel aliquid.
-                    </p>
-                    <button class="information">
-                        Saiba Mais
-                    </button>
-                </div>
-            </div>
+    <section class="container">
+      <div class="list">
+
+        <div class="item active">
+          <div class="weed-img">
+            <img src="./img/indica-removebg-preview.png" alt="Indica" />
+          </div>
+          <div class="content">
+            <p class="weed-information">4:20</p>
+            <h2>Indica</h2>
+            <p class="description">
+              Cannabis Indica
+              Origem: Regiões montanhosas da Ásia, como Afeganistão e Índia.
+              Aparência: Baixas, compactas, com folhas largas.
+              Efeitos (usos medicinais e recreativos): Relaxantes e calmantes, frequentemente usados para aliviar insônia, dores e ansiedade.
+              Crescimento: Ciclo mais curto, adaptada a climas mais frios.
+            </p>
+            <button class="information">Saiba Mais</button>
+          </div>
         </div>
 
-        <div class="arrows">
-            <button><img src="./img/seta-removebg-preview.png" alt=""></button>
-            <button><img src="./img/seta-removebg-preview.png" alt=""></button>
+        <div class="item">
+          <div class="weed-img">
+            <img src="./img/sativa-removebg-preview.png" alt="Sativa" />
+          </div>
+          <div class="content">
+            <p class="weed-information">4:20</p>
+            <h2>Sativa</h2>
+            <p class="description">
+              Cannabis Sativa
+              Origem: Regiões equatoriais, como Ásia, América Central e África.
+              Aparência: Altas, com folhas finas e espaçadas.
+              Efeitos (usos medicinais e recreativos): Energizantes e estimulantes, podendo aumentar foco e criatividade. Útil no tratamento de depressão e fadiga.
+              Crescimento: Ciclo longo, ideal para climas quentes.
+              
+            </p>
+            <button class="information">Saiba Mais</button>
+          </div>
         </div>
 
-        <div class="indicators">
-            <div class="number">01</div>
-            <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="item">
+          <div class="weed-img">
+            <img src="./img/ruderalis-removebg-preview.png" alt="Ruderalis" />
+          </div>
+          <div class="content">
+            <p class="weed-information">4:20</p>
+            <h2>Ruderalis</h2>
+            <p class="description">
+              Cannabis Ruderalis
+              Origem: Áreas da Europa Oriental, Rússia e Ásia Central.
+              Aparência: Pequena, robusta, com folhas estreitas.
+              Características especiais: Ciclo de floração automática, independente da luz, tornando-a ideal para cruzamentos genéticos.
+              Efeitos (usos medicinais): Menor teor de THC, mais usada para aplicações medicinais devido ao CBD.
+
+            </p>
+            <button class="information">Saiba Mais</button>
+          </div>
         </div>
 
+      </div>
+
+      <div class="arrows">
+        <button id="prev"><img src="./img/seta-removebg-preview.png" alt="" /></button>
+        <button id="next"><img src="./img/seta-removebg-preview.png" alt="" /></button>
+      </div>
+
+      <div class="indicators">
+        <div class="number">01</div>
+        <ul>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </section>
-</body>
+
+      <script src="./scripts.js"></script>
+    </body>
+
 </html>
